@@ -21,12 +21,10 @@ export function ConfidenceScoreColor({ track }: ConfidenceColorProps) {
 
   return (
     <div className={styles.confidenceContainer}>
-      <div
+      <button
         className={styles.confidenceScore}
         onMouseEnter={() => setIsConfidenceHovered(true)}
         onMouseLeave={() => setIsConfidenceHovered(false)}
-        role="button"
-        tabIndex={0}
       >
         <div
           className={styles.confidenceColor}
@@ -42,7 +40,7 @@ export function ConfidenceScoreColor({ track }: ConfidenceColorProps) {
           track={track}
           isConfidenceHovered={isConfidenceHovered}
         />
-      </div>
+      </button>
     </div>
   );
 }
