@@ -45,3 +45,6 @@ postman_collection.json
 
 # claude local state
 .claude/
+
+
+.husky
